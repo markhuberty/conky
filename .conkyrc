@@ -66,8 +66,10 @@ cpu_avg_samples 2
 TEXT
 # Free space on /home
 /home ${fs_free /home} | \
+# Battery charge
+batt ${battery_short} | \
 # Ethernet status
-eth0 ${if_up eth0}${addr eth0}${endif} | \
+# eth0 ${if_up eth0}${addr eth0}${endif} | \
 # Wireless status
 wlan0 ${if_up wlan0}${addr wlan0}${wireless_essid wlan0}${endif} | \
 # CPU stats
