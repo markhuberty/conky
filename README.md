@@ -1,4 +1,5 @@
-i3
-==
+conky
+=====
 
-i3 configuration files
+Conky config files
+
