@@ -79,4 +79,4 @@ RAM ${memperc}% | \
 #BATT ${battery BAT0} | 
 ${tztime America/Los_Angeles %a %d.%m.%y} ${tztime America/Los_Angeles %H:%M} | \
 # # Weather temperature 
-${exec weather -id MDW --headers="Temperature" -q | awk '/Temperature/ {print $2}'}°C ${exec weather -id SFO --headers="Sky conditions" -q | awk '/Sky conditions/ {print $3 " " $4}'}
+${exec weather -id SJC --headers="Temperature" -q | awk '/Temperature/ {print $2}'}°C ${exec weather -id SJC --headers="Sky conditions" -q | awk '/Sky conditions/ {print $3 " " $4}'}
